@@ -36,3 +36,17 @@ jobs:
         run: mvn $MAVEN_CLI_OPTS clean package -Pcli -DskipTests
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Copy resources
+        run: |
+          mkdir -p docker/target
+          cp target/*.jar docker/target/commons-ip-cits-erms.jar
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      - name: Build
+        uses: docker/build-push-action@v5
+        with:
+          context: docker
+          push: false
+          tags: keeps/commons-ip-cits-erms:latest
