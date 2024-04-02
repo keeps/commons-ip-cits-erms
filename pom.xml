@@ -193,6 +193,7 @@
                 <finalName>commons-ip-cits-erms-cli-${project.version}</finalName>
                 <plugins>
                     <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-assembly-plugin</artifactId>
                         <version>3.6.0</version>
                         <executions>
@@ -229,7 +230,7 @@
         <dependency>
             <groupId>org.roda-project</groupId>
             <artifactId>commons-ip2</artifactId>
-            <version>2.6.0</version>
+            <version>2.6.2</version>
         </dependency>
         <!-- CLI dependecies -->
         <!-- https://mvnrepository.com/artifact/info.picocli/picocli -->
