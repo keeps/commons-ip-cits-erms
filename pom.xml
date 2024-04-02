@@ -22,11 +22,27 @@
         </repository>
     </distributionManagement>
 
+    <repositories>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/keeps/commons-ip</url>
+        </repository>
+    </repositories>
+
     <developers>
         <developer>
             <id>mguimaraes</id>
             <name>Miguel Guimarães</name>
             <email>mguimaraes@keep.pt</email>
+            <organization>KEEP SOLUTIONS</organization>
+            <organizationUrl>https://www.keep.pt</organizationUrl>
+            <timezone>0</timezone>
+        </developer>
+        <developer>
+            <id>cafonso</id>
+            <name>Carlos Afonso</name>
+            <email>cafonso@keep.pt</email>
             <organization>KEEP SOLUTIONS</organization>
             <organizationUrl>https://www.keep.pt</organizationUrl>
             <timezone>0</timezone>

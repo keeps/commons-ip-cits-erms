@@ -28,7 +28,7 @@ jobs:
           restore-keys: ${{ runner.os }}-maven-
       - name: Test
         run: mvn $MAVEN_CLI_OPTS test
-      - name: Build lib
+      - name: Build library
         run: mvn -$MAVEN_CLI_OPTS clean package -DskipTests
       - name: Build CLI
         run: mvn $MAVEN_CLI_OPTS clean package -Pcli -DskipTests
