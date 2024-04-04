@@ -5,6 +5,8 @@ on:
       - "**"
     tags-ignore:
       - "**"
+    branches-ignore:
+      - "development"
 
 jobs:
   continuous-integration:
