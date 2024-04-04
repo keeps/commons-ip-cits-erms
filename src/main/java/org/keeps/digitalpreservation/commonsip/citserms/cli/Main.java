@@ -15,7 +15,7 @@ import picocli.CommandLine;
 /**
  * @author Miguel Guimarães <mguimaraes@keep.pt>
  */
-@CommandLine.Command(name = "commons-ip-cits-siard", subcommands = {Create.class,
+@CommandLine.Command(name = "commons-ip-cits-ERMS", subcommands = {Create.class,
     Validate.class}, mixinStandardHelpOptions = true, versionProvider = VersionProvider.class)
 public class Main implements Runnable {
 
