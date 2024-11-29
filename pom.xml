@@ -5,7 +5,7 @@
 
     <groupId>org.keeps.digitalpreservation</groupId>
     <artifactId>commons-ip-cits-erms</artifactId>
-    <version>1.0.0-beta.1</version>
+    <version>1.0.0-SNAPSHOT</version>
 
     <packaging>jar</packaging>
 
