@@ -3,8 +3,8 @@ on:
   push:
     tags-ignore:
       - "**"
-    branches-ignore:
-      - "development"
+    branches:
+      - "**"
 
 jobs:
   continuous-integration:
